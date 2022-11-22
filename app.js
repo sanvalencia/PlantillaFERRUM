@@ -12,6 +12,14 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
+app.get('/pedidos', (req, res) => {
+    res.render('pedidos')
+  })
+
+  app.get('/crearpedido', (req, res) => {
+    res.render('crearpedido')
+  })
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })

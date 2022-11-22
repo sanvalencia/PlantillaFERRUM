@@ -1,0 +1,50 @@
+<!-- Head -->
+{{> head}}
+<!-- nav -->
+{{> nav}}
+<!-- body-->
+
+<div class="container">
+    <main role="main" class="pb-3">
+        <p>
+            <a class="mdi mdi-cart-outline" id="iconoadd" href="/crearpedido"></a>
+        </p>
+
+        <table id="pedidos" class="table table-striped dt-responsive nowrap" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Número Pedido</th>
+                    <th>Cédula</th>
+                    <th>Nombre</th>
+                    <th>Fecha Registro</th>
+                    <th>Fecha Entrega</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+    </main>
+</div>
+<!-- footer -->
+{{> footer}}
+<!-- scripts -->
+<script src="/https/pedidos/request.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.4.0/css/responsive.bootstrap5.min.css">
+<script>
+    $(document).ready(function () {
+        $('#pedidos').DataTable(
+            {
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.10.15/i18n/Spanish.json"
+                }
+            });
+    });
+</script>
+
+
+{{> scripts}}

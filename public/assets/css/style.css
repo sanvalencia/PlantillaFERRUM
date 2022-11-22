@@ -27115,3 +27115,7 @@ iframe {
     border-color: #d9534f !important;
     box-shadow: none !important;
 }
+
+#pedidos_filter{
+    margin-left: 62%;
+}
